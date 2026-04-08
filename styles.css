@@ -7,14 +7,11 @@
     font-display: swap;
 }
 
-.logo{
-    font-family: "Norse";
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* commit setup system font stack */
 }
 
-
-
-.red{
-    background-color: red;
-    width: 100px;
-    height: 100px;
+.logo{
+    font-family: "Norse";
 }
