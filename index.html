@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
+    <div class="left" id="left-image">
+        <img src="assests/background-image.avif">
         <div>
-            <img src="assests/odin-lined.png" alt="Odin Logo" width="150" height="150">
+            <img src="assests/odin-lined.png" alt="Odin Logo" width="75" height="100">
             <h1 class="logo">ODIN</h1>
         </div>
-        <p>Photo by <a href="">Halie</a> West on <a href="">Unsplash</a></p>
+        <p>Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
     </div>
-    <div>
+    <div class="right">
         <div>
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams</p>
             <p>Sign up <em>now</em> to get started</p>
             <p>You know you want to.</p>
         </div>
-        <form action="https://httpbin.org/post" method="post">
+        <form action="https://httpbin.org/post" method="post" id="my-form">
             <legend>Let's do this!</legend>
             <div>
                 <label for="">FIRST NAME</label>
@@ -43,9 +44,11 @@
                 <label for="">CONFIRM PASSWORD</label>
                 <input>
             </div>
+            <button type="submit" class="hidden" id="submit-button"></button>
         </form>
         <div>
-            <button>Create Account</button>
+            <label class="submit-label" for="submit-button">Create Account</label>
+            <!-- clicking the label clicks the submit button -->
             <p>Already have an account?</p>
             <p><a href="">Log in</a></p>
         </div>

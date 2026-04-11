@@ -9,8 +9,63 @@
 
 body {
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: flex;
+  height: 100vh;
 }
 
 .logo{
     font-family: "Norse";
 }
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 712px;
+    align-items: center;
+    position: relative;
+    color:white;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position: absolute;
+        font-size: 35px;
+        top:180px;
+        display: flex;
+        width: 100%;
+        height: 110px;
+        padding: 5px 0 5px 0;
+        background: rgb(0 0 0 / 57%);
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 70px;
+            height: 100%;
+        }
+    }
+    p{
+        position: absolute;
+        bottom: 10px;
+        font-size: 12px;
+        a{
+            color: white;
+        }
+    }
+
+}
+
+.right{
+    background-color: rgba(240, 238, 238, 0.968);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    form{
+        background-color: white;
+    }
+
+}
+
