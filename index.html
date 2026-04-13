@@ -26,27 +26,27 @@
             <legend>Let's do this!</legend>
             <div>
                 <div>
-                    <label for="">FIRST NAME</label>
-                    <input>
-                    <label for="">EMAIL</label>
-                    <input>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" id="firstName" name="userFirstName" required>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="userEmail" required>
                 
-                    <label for="">PASSWORD</label>
-                    <input>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="userPassword" minlength="7" maxlength="20" pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).*$" required>
                 </div>
                 <div>
-                    <label for="">LAST NAME</label>
-                    <input>
-                    <label for="">PHONE NUMBER</label>
-                    <input>
-                    <label for="">CONFIRM PASSWORD</label>
-                    <input>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastName" name="userLastName" required>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="userPhone">
+                    <label for="confirmPass">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPass" name="userConfirmPassword" minlength="7" maxlength="20" pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).*$" required>
                 </div>
             </div>
             <button type="submit" class="hidden" id="submit-button"></button>
         </form>
         <div>
-            <label class="submit-label" for="submit-button">Create Account</label>
+            <label class="submit-label" for="submit-button" tabindex="0">Create Account</label>
             <!-- clicking the label clicks the submit button -->
             <div>
                 <p>Already have an account? </p>
